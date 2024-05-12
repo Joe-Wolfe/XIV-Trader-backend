@@ -1,10 +1,9 @@
 {
   "type": "module",
   "scripts": {
-    "start": "node dist/server.js",
+    "start": "node server.js",
     "dev": "NODE_ENV=test nodemon server.js",
-    "test": "jest dist -i",
-    "build": "rm -rf dist && babel . --out-dir dist"
+    "test": "jest dist -i"
   },
   "dependencies": {
     "axios": "^1.6.8",
