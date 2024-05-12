@@ -1,0 +1,27 @@
+{
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "NODE_ENV=test nodemon server.js",
+    "test": "jest dist -i",
+    "build": "rm -rf dist && babel . --out-dir dist"
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0",
+    "pg": "^8.11.5",
+    "supertest": "^7.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.5",
+    "@babel/core": "^7.24.5",
+    "@babel/preset-env": "^7.24.5",
+    "@babel/preset-react": "^7.24.1",
+    "@jest/globals": "^29.7.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.0"
+  }
+}
