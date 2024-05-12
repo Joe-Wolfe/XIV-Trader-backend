@@ -5,6 +5,7 @@
 import express from 'express';
 import cors from 'cors';
 import morgan from 'morgan';
+import { NotFoundError } from './expressError';
 
 //import routes
 import itemsRoutes from './routes/items.js';
